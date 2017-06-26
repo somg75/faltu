@@ -20,7 +20,7 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 
 
 	public void hello(int id) {
-		HelloUser user = dao.findOne(id);
+		HelloUser user = getUser(id);
 		if(user != null) {
 			System.out.println("Hello " + user.getUserName() +  "!!");
 		}
@@ -30,5 +30,11 @@ public class HelloWorldServiceImpl implements HelloWorldService {
 		
 	}
 
+
+	@Override
+	public HelloUser getUser(int id) {
+		return dao.findOne(id);
+	}
+	
 }
 
