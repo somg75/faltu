@@ -3,6 +3,8 @@ package com.niit.somg;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.niit.somg.service.HelloWorldService;
+
 
 public class HelloWorldApp {
 	public static void main(String[] args) {

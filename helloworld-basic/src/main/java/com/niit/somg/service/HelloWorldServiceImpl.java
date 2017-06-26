@@ -1,7 +1,10 @@
-package com.niit.somg;
+package com.niit.somg.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.niit.somg.data.HelloUser;
+import com.niit.somg.data.HelloUserDao;
 
 @Service
 public class HelloWorldServiceImpl implements HelloWorldService {

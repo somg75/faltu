@@ -1,4 +1,4 @@
-package com.niit.somg;
+package com.niit.somg.data;
 
 import org.springframework.data.repository.CrudRepository;
 

@@ -1,4 +1,4 @@
-package com.niit.somg;
+package com.niit.somg.data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

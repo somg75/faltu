@@ -1,4 +1,4 @@
-package com.niit.somg;
+package com.niit.somg.config;
 
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.spi.PersistenceProvider;
