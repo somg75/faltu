@@ -19,7 +19,7 @@ public class HelloWorldRestController {
 	
 	@RequestMapping(method=RequestMethod.GET, value="getuser/{id}")
 	public ResponseEntity retrieve(@PathVariable("id") int id) {
-		System.out.println("Request came here >> " + id);
+		//System.out.println("Request came here >> " + id);
 		HelloUser user = service.getUser(id);
 		if(user == null) {
 			return new ResponseEntity("No User found with ID = " + id, HttpStatus.NOT_FOUND);

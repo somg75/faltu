@@ -14,7 +14,7 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 
 @Configuration
-@EnableJpaRepositories(basePackages={"com.niit.somg"})
+@EnableJpaRepositories(basePackages={"com.niit.somg.data"})
 public class HelloDaoConfig {
 
 	@Bean
@@ -34,7 +34,7 @@ public class HelloDaoConfig {
 	LocalContainerEntityManagerFactoryBean entityManagerFactory() {
 		LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
 		entityManagerFactoryBean.setDataSource(dataSource());
-		entityManagerFactoryBean.setPackagesToScan("com.niit.somg");
+		entityManagerFactoryBean.setPackagesToScan("com.niit.somg.data");
 		PersistenceProvider persistenceProvider = new HibernatePersistenceProvider();
 		entityManagerFactoryBean.setPersistenceProvider(persistenceProvider);
 		return entityManagerFactoryBean;
